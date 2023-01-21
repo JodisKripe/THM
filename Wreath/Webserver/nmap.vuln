@@ -1,0 +1,258 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-01-16 17:12 IST
+Stats: 0:00:07 elapsed; 0 hosts completed (0 up), 0 undergoing Script Pre-Scan
+NSE Timing: About 0.00% done
+Nmap scan report for thomaswreath.thm (10.200.57.200)
+Host is up (0.22s latency).
+
+PORT      STATE SERVICE  VERSION
+22/tcp    open  ssh      OpenSSH 8.0 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.0: 
+|     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+|     	C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	6.8	https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	*EXPLOIT*
+|     	10213DBE-F683-58BB-B6D3-353173626207	6.8	https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2019-16905	4.4	https://vulners.com/cve/CVE-2019-16905
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-20012	4.3	https://vulners.com/cve/CVE-2016-20012
+|_    	CVE-2021-36368	2.6	https://vulners.com/cve/CVE-2021-36368
+80/tcp    open  http     Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1c)
+|_http-server-header: Apache/2.4.37 (centos) OpenSSL/1.1.1c
+|_http-passwd: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2013-7091: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.37: 
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+|     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+|     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
+|     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	CNVD-2022-73123	7.5	https://vulners.com/cnvd/CNVD-2022-73123
+|     	CNVD-2022-03225	7.5	https://vulners.com/cnvd/CNVD-2022-03225
+|     	CNVD-2021-102386	7.5	https://vulners.com/cnvd/CNVD-2021-102386
+|     	1337DAY-ID-34882	7.5	https://vulners.com/zdt/1337DAY-ID-34882	*EXPLOIT*
+|     	EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	7.2	https://vulners.com/exploitpack/EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	*EXPLOIT*
+|     	EDB-ID:46676	7.2	https://vulners.com/exploitdb/EDB-ID:46676	*EXPLOIT*
+|     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
+|     	1337DAY-ID-32502	7.2	https://vulners.com/zdt/1337DAY-ID-32502	*EXPLOIT*
+|     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
+|     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
+|     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
+|     	CNVD-2022-03224	6.8	https://vulners.com/cnvd/CNVD-2022-03224
+|     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
+|     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|     	0095E929-7573-5E4A-A7FA-F6598A35E8DE	6.8	https://vulners.com/githubexploit/0095E929-7573-5E4A-A7FA-F6598A35E8DE	*EXPLOIT*
+|     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
+|     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
+|     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
+|     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
+|     	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
+|     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+|     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+|     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+|     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
+|     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
+|     	CVE-2021-36160	5.0	https://vulners.com/cve/CVE-2021-36160
+|     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
+|     	CVE-2021-33193	5.0	https://vulners.com/cve/CVE-2021-33193
+|     	CVE-2021-26690	5.0	https://vulners.com/cve/CVE-2021-26690
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2019-17567	5.0	https://vulners.com/cve/CVE-2019-17567
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CVE-2018-17199	5.0	https://vulners.com/cve/CVE-2018-17199
+|     	CVE-2018-17189	5.0	https://vulners.com/cve/CVE-2018-17189
+|     	CNVD-2022-73122	5.0	https://vulners.com/cnvd/CNVD-2022-73122
+|     	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
+|     	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
+|     	CNVD-2022-03223	5.0	https://vulners.com/cnvd/CNVD-2022-03223
+|     	CVE-2019-0197	4.9	https://vulners.com/cve/CVE-2019-0197
+|     	CVE-2020-11993	4.3	https://vulners.com/cve/CVE-2020-11993
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
+|     	1337DAY-ID-35422	4.3	https://vulners.com/zdt/1337DAY-ID-35422	*EXPLOIT*
+|     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
+|_    	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
+443/tcp   open  ssl/http Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1c)
+|_http-server-header: Apache/2.4.37 (centos) OpenSSL/1.1.1c
+|_http-trace: TRACE is enabled
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-enum: 
+|   /css/: Potentially interesting folder w/ directory listing
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /img/: Potentially interesting folder w/ directory listing
+|_  /js/: Potentially interesting folder w/ directory listing
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DD%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DD%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DD%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://thomaswreath.thm:443/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|_    https://thomaswreath.thm:443/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.37: 
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+|     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+|     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
+|     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	CNVD-2022-73123	7.5	https://vulners.com/cnvd/CNVD-2022-73123
+|     	CNVD-2022-03225	7.5	https://vulners.com/cnvd/CNVD-2022-03225
+|     	CNVD-2021-102386	7.5	https://vulners.com/cnvd/CNVD-2021-102386
+|     	1337DAY-ID-34882	7.5	https://vulners.com/zdt/1337DAY-ID-34882	*EXPLOIT*
+|     	EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	7.2	https://vulners.com/exploitpack/EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	*EXPLOIT*
+|     	EDB-ID:46676	7.2	https://vulners.com/exploitdb/EDB-ID:46676	*EXPLOIT*
+|     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
+|     	1337DAY-ID-32502	7.2	https://vulners.com/zdt/1337DAY-ID-32502	*EXPLOIT*
+|     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
+|     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
+|     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
+|     	CNVD-2022-03224	6.8	https://vulners.com/cnvd/CNVD-2022-03224
+|     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
+|     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|     	0095E929-7573-5E4A-A7FA-F6598A35E8DE	6.8	https://vulners.com/githubexploit/0095E929-7573-5E4A-A7FA-F6598A35E8DE	*EXPLOIT*
+|     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
+|     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
+|     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
+|     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
+|     	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
+|     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+|     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+|     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+|     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
+|     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
+|     	CVE-2021-36160	5.0	https://vulners.com/cve/CVE-2021-36160
+|     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
+|     	CVE-2021-33193	5.0	https://vulners.com/cve/CVE-2021-33193
+|     	CVE-2021-26690	5.0	https://vulners.com/cve/CVE-2021-26690
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2019-17567	5.0	https://vulners.com/cve/CVE-2019-17567
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CVE-2018-17199	5.0	https://vulners.com/cve/CVE-2018-17199
+|     	CVE-2018-17189	5.0	https://vulners.com/cve/CVE-2018-17189
+|     	CNVD-2022-73122	5.0	https://vulners.com/cnvd/CNVD-2022-73122
+|     	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
+|     	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
+|     	CNVD-2022-03223	5.0	https://vulners.com/cnvd/CNVD-2022-03223
+|     	CVE-2019-0197	4.9	https://vulners.com/cve/CVE-2019-0197
+|     	CVE-2020-11993	4.3	https://vulners.com/cve/CVE-2020-11993
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
+|     	1337DAY-ID-35422	4.3	https://vulners.com/zdt/1337DAY-ID-35422	*EXPLOIT*
+|     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
+|_    	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
+10000/tcp open  http     MiniServ 1.890 (Webmin httpd)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-litespeed-sourcecode-download: 
+| Litespeed Web Server Source Code Disclosure (CVE-2010-2333)
+| /index.php source code:
+| <h1>Error - Document follows</h1>
+|_<p>This web server is running in SSL mode. Try the URL <a href='https://ip-10-200-57-200.eu-west-1.compute.internal:10000/'>https://ip-10-200-57-200.eu-west-1.compute.internal:10000/</a> instead.<br></p>
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <h1>Error - Document follows</h1>
+|   <p>This web server is running in SSL mode. Try the URL <a href='https://ip-10-200-57-200.eu-west-1.compute.internal:10000/'>https://ip-10-200-57-200.eu-west-1.compute.internal:10000/</a> instead.<br></p>
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-vuln-cve2006-3392: 
+|   VULNERABLE:
+|   Webmin File Disclosure
+|     State: VULNERABLE (Exploitable)
+|     IDs:  CVE:CVE-2006-3392
+|       Webmin before 1.290 and Usermin before 1.220 calls the simplify_path function before decoding HTML.
+|       This allows arbitrary files to be read, without requiring authentication, using "..%01" sequences
+|       to bypass the removal of "../" directory traversal sequences.
+|       
+|     Disclosure date: 2006-06-29
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3392
+|       http://www.exploit-db.com/exploits/1997/
+|_      http://www.rapid7.com/db/modules/auxiliary/admin/webmin/file_disclosure
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 95.18 seconds
