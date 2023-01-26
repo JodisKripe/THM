@@ -4,7 +4,7 @@ This is a collection of all files farmed from or created for playing around the 
 
 - [x] Wreath
 - [x] Breaching AD
-- [ ] Enumerating AD
+- [x] Enumerating AD
 - [ ] Lateral Movement and Pivoting
 - [ ] Exploiting AD
 - [ ] Persisting AD
