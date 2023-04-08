@@ -6,7 +6,7 @@ This is a collection of all files farmed from or created for playing around the 
 - [x] Breaching AD
 - [x] Enumerating AD
 - [x] Lateral Movement and Pivoting
-- [ ] Exploiting AD
+- [x] Exploiting AD
 - [ ] Persisting AD
 - [ ] Holo
 - [x] Throwback (via walkthrough, not OC)
