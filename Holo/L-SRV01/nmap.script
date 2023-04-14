@@ -1,0 +1,30 @@
+nmap -p22,80,33060 -sV -sC -T4 -Pn -oA 10.200.111.33 10.200.111.33                                                                                           
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-13 21:09 IST                                                                                              
+Nmap scan report for 10.200.111.33                                                                                                                           
+Host is up (0.16s latency).                                                                                                                                  
+                                                                                                                                                             
+PORT      STATE SERVICE VERSION                                                                                                                              
+22/tcp    open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)                                                                         
+| ssh-hostkey:                                                                                                                                               
+|   3072 73b46c1e68d35ee9ae916cab4a335fd0 (RSA)                                                                                                              
+|   256 fc2976db41dbf62949ef79c329aec3c5 (ECDSA)                                                                                                             
+|_  256 8fabceb77e5b1d8b289b66a63771e6ab (ED25519)                                                                                                           
+80/tcp    open  http    Apache httpd 2.4.29 ((Ubuntu))                                                                                                       
+| http-robots.txt: 21 disallowed entries (15 shown)                                                                                                          
+| /var/www/wordpress/index.php                                                                                                                               
+| /var/www/wordpress/readme.html /var/www/wordpress/wp-activate.php                                                                                          
+| /var/www/wordpress/wp-blog-header.php /var/www/wordpress/wp-config.php                                                                                     
+| /var/www/wordpress/wp-content /var/www/wordpress/wp-includes                                                                                               
+| /var/www/wordpress/wp-load.php /var/www/wordpress/wp-mail.php                                                                                              
+| /var/www/wordpress/wp-signup.php /var/www/wordpress/xmlrpc.php                                                                                             
+| /var/www/wordpress/license.txt /var/www/wordpress/upgrade                                                                                                  
+|_/var/www/wordpress/wp-admin /var/www/wordpress/wp-comments-post.php                                                                                        
+|_http-generator: WordPress 5.5.3                                                                                                                            
+|_http-title: holo.live                                                                                                                                      
+|_http-server-header: Apache/2.4.29 (Ubuntu)                                                                                                                 
+33060/tcp open  mysqlx?                                                                                                                                      
+| fingerprint-strings:                                                                                                                                       
+|   DNSStatusRequestTCP, LDAPSearchReq, NotesRPC, SSLSessionReq, TLSSessionReq, X11Probe, afp:                                                               
+|     Invalid message"                                                                                                                                       
+|_    HY000
+

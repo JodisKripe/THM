@@ -1,0 +1,180 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-04-14 06:04 UTC
+Nmap scan report for ip-10-200-111-30.eu-west-1.compute.internal (10.200.111.30)
+Host is up (0.0012s latency).
+Not shown: 987 closed ports
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2023-04-14 06:05:10Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: holo.live0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: holo.live0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: HOLOLIVE
+|   NetBIOS_Domain_Name: HOLOLIVE
+|   NetBIOS_Computer_Name: DC-SRV01
+|   DNS_Domain_Name: holo.live
+|   DNS_Computer_Name: DC-SRV01.holo.live
+|   DNS_Tree_Name: holo.live
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-04-14T06:07:33+00:00
+| ssl-cert: Subject: commonName=DC-SRV01.holo.live
+| Not valid before: 2023-04-02T19:41:22
+|_Not valid after:  2023-10-02T19:41:22
+|_ssl-date: 2023-04-14T06:07:49+00:00; 0s from scanner time.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=4/14%Time=6438ED1B%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\
+SF:x04bind\0\0\x10\0\x03");
+Service Info: Host: DC-SRV01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_nbstat: NetBIOS name: DC-SRV01, NetBIOS user: <unknown>, NetBIOS MAC: 02:3f:0b:8e:d2:e5 (unknown)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-04-14T06:07:36
+|_  start_date: N/A
+
+Nmap scan report for ip-10-200-111-31.eu-west-1.compute.internal (10.200.111.31)
+Host is up (0.0012s latency).
+Not shown: 992 closed ports
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 7c:c4:6b:4c:f5:73:58:dc:d6:ac:3c:bd:21:7e:67:3b (RSA)
+|   256 f1:83:ba:c1:94:ab:35:7c:44:00:26:55:9d:13:7b:94 (ECDSA)
+|_  256 32:86:c6:52:b3:61:27:71:ff:6d:9f:8d:f9:86:16:83 (ED25519)
+80/tcp   open  http          Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.11)
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.11
+|_http-title: Holo.live - Virtual Events
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http      Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.11)
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.11
+|_http-title: Holo.live - Virtual Events
+| ssl-cert: Subject: commonName=localhost
+| Not valid before: 2009-11-10T23:48:47
+|_Not valid after:  2019-11-08T23:48:47
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: HOLOLIVE
+|   NetBIOS_Domain_Name: HOLOLIVE
+|   NetBIOS_Computer_Name: S-SRV01
+|   DNS_Domain_Name: holo.live
+|   DNS_Computer_Name: S-SRV01.holo.live
+|   DNS_Tree_Name: holo.live
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-04-14T06:07:36+00:00
+| ssl-cert: Subject: commonName=S-SRV01.holo.live
+| Not valid before: 2023-04-02T19:41:27
+|_Not valid after:  2023-10-02T19:41:27
+|_ssl-date: 2023-04-14T06:07:49+00:00; 0s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_nbstat: NetBIOS name: S-SRV01, NetBIOS user: <unknown>, NetBIOS MAC: 02:7d:bd:47:59:69 (unknown)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-04-14T06:07:36
+|_  start_date: N/A
+
+Nmap scan report for ip-10-200-111-33.eu-west-1.compute.internal (10.200.111.33)
+Host is up (0.00018s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-generator: WordPress 5.5.3
+| http-robots.txt: 21 disallowed entries (15 shown)
+| /var/www/wordpress/index.php 
+| /var/www/wordpress/readme.html /var/www/wordpress/wp-activate.php 
+| /var/www/wordpress/wp-blog-header.php /var/www/wordpress/wp-config.php 
+| /var/www/wordpress/wp-content /var/www/wordpress/wp-includes 
+| /var/www/wordpress/wp-load.php /var/www/wordpress/wp-mail.php 
+| /var/www/wordpress/wp-signup.php /var/www/wordpress/xmlrpc.php 
+| /var/www/wordpress/license.txt /var/www/wordpress/upgrade 
+|_/var/www/wordpress/wp-admin /var/www/wordpress/wp-comments-post.php
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: holo.live
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for ip-10-200-111-35.eu-west-1.compute.internal (10.200.111.35)
+Host is up (0.00066s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: HOLOLIVE
+|   NetBIOS_Domain_Name: HOLOLIVE
+|   NetBIOS_Computer_Name: PC-FILESRV01
+|   DNS_Domain_Name: holo.live
+|   DNS_Computer_Name: PC-FILESRV01.holo.live
+|   DNS_Tree_Name: holo.live
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-04-14T06:07:33+00:00
+| ssl-cert: Subject: commonName=PC-FILESRV01.holo.live
+| Not valid before: 2023-04-02T19:41:18
+|_Not valid after:  2023-10-02T19:41:18
+|_ssl-date: 2023-04-14T06:07:49+00:00; 0s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_nbstat: NetBIOS name: PC-FILESRV01, NetBIOS user: <unknown>, NetBIOS MAC: 02:02:69:c2:38:c3 (unknown)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-04-14T06:07:36
+|_  start_date: N/A
+
+Nmap scan report for ip-10-200-111-250.eu-west-1.compute.internal (10.200.111.250)
+Host is up (0.0052s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f5:40:87:67:88:a9:a6:ea:9c:66:de:c0:c0:42:13:c5 (RSA)
+|   256 c2:c7:20:b1:d7:fd:c3:65:d7:bc:77:96:c0:c0:7f:cf (ECDSA)
+|_  256 c9:84:a8:13:ed:c7:98:80:20:e6:f5:81:8a:c5:a5:2d (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Post-scan script results:
+| clock-skew: 
+|   0s: 
+|     10.200.111.35 (ip-10-200-111-35.eu-west-1.compute.internal)
+|     10.200.111.30 (ip-10-200-111-30.eu-west-1.compute.internal)
+|_    10.200.111.31 (ip-10-200-111-31.eu-west-1.compute.internal)
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (5 hosts up) scanned in 250.65 seconds
